@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="inventions_quiz.css" type="text/css">
+    <title>HistoryQuizer - Inventions Quiz</title>
+    <link rel="icon" href="Image-Folder/History-Quizer-Icon-Only.png">
+</head>
+<body>
+    <nav>
+        <div class="topbar-navigation">
+            <div class="logo">
+            <li><a href="index.html">HistoryQuizer</a></li>
+            </div>
+            <li><a href="learn_history.html">Learn more about History</a></li>
+            <li><a href="scoreboard.html">Scoreboard</a></li>
+            </div>
+    
+        <div class="dropdown">
+            <button class="dropdown-button">Quiz Categories</button>
+            <div class="dropdown-content">
+                <a href="general_history_quiz_start.html">General History Quiz</a>
+                <a href="inventions_quiz_start.html" style="background-color: tomato; color: white;">Inventions Quiz</a>
+                <a href="dark_history_quiz_start.html">Dark History Quiz</a>
+            </div>
+        </div>
+      </nav>
+      <div id = "hgroup1">
+    <h1>Inventions Quiz</h1>
+      </div>
+
+    <section>
+        <div class="container">
+            <div id="game">
+                <div id="hud">
+                    <div id="hud-item">
+                        <div id = "hgroup2">
+                        <h1 class="hud-question">
+                        Question
+                        </h1>
+                        <h1 class="hud-question-text" id="questionCounter"></h1></div>
+                    </div>
+                </div>
+            <h2 id="question">What is the answer?</h2>
+                <div class="button-grid">
+                <p class="choice-text" data-number="1">Answer1</p>
+                </div>
+                <div class="button-grid">
+                <p class="choice-text" data-number="2">Answer2</p>
+                </div>
+                <div class="button-grid">
+                <p class="choice-text" data-number="3">Answer3</p>
+                </div>
+                <div class="button-grid">
+                <p class="choice-text" data-number="4">Answer4</p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <footer>&copy; 2022 - HistoryQuizer - All rights reserved</footer>
+    <script src="inventions_quiz.js"></script>
+</body>
+</html>

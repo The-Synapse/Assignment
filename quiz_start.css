@@ -1,0 +1,222 @@
+body {
+    background-color: lightsteelblue;
+    margin: 0
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+    margin: 0;
+    font-size: 48px;
+    padding-top: 150px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #be3939;
+  margin: 0;
+  font-size: 28px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Topbar-nav start - Learnt from W3Schools.com - Navigation bar: https://www.w3schools.com/css/css_navbar.asp */
+.topbar-navigation {
+    position: fixed;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    display: inline-flex;
+    flex-wrap: row wrap;
+    justify-content : flex - end;
+    font-size: 24px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.topbar-navigation a{
+    text-decoration : none;
+    display: inline-flex;
+    color : white;
+    padding-bottom : 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    }
+
+.topbar-navigation a:hover{
+   background-color: tomato;
+   color: white;
+    }
+    
+@media all and (max-width: 100px) {
+        .topbar-navigation {
+            justify-content: space-around;
+        }
+    }
+    
+@media all and (max-width : 600px) {
+        .topbar-navigation {
+        flex-flow : column wrap ;
+        }
+    
+    
+.topbar-navigation li :last-of-type a {
+                border-bottom : none;
+            }
+    }
+/* Topbar-nav end */
+
+/* Logo portion of css for Homepage */
+.logo {
+  border-right: 2px solid white;
+  color: white;
+  background-color: teal;
+  font-size: 24px; 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  text-align: center;
+}
+
+/* Dropdown Menu portion of css for Homepage - Learnt from W3Schools.com - Dropdown Menu: https://www.w3schools.com/css/css_dropdowns.asp*/
+.dropdown-button {
+    background-color: teal;
+    color: #000000;
+    font-size: 22.2px;
+    padding: 20px;
+    align-self: left;
+    cursor: default;
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+    border: 2px solid white;
+    border-left: 2px solid teal;
+}
+
+.dropdown {
+    position: fixed;
+    left: auto;
+    margin-top: 78px;
+  }
+  
+  .dropdown :hover{
+    background-color: tomato;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: turquoise;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  .dropdown-content a{
+      color: black;
+      padding: 20px;
+      text-decoration: none;
+      display: block;
+      align-content: center;
+      stroke-width: 10px;
+    }
+  
+  .dropdown-content a:hover{
+      background-color: tomato;
+      color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+    text-decoration-color: #f9f9f9;
+    background-color: turquoise;
+  }
+
+  .container {
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    height: fit-content;
+    padding: 50px;
+    max-width: 80%;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background-color: teal;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+
+  #content-warning {
+    background-color: turquoise;
+    border: 5px solid;
+    border-color: #be3939;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .start-button{
+    background-color: turquoise;
+    color: black;
+    border: 2px solid;
+    border-color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 25px 25px;
+    outline: none;
+    text-decoration: none;
+  }
+
+  .start-button:hover{
+    border-color: black;
+    background-color: tomato;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.6)
+  }
+
+  footer {
+    display: block;
+    position: absolute;
+    margin: 0;
+    background-color: teal;
+    color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    text-align: bottom;
+    text-indent: 16px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-top: 2px solid white;
+}

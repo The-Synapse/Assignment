@@ -1,0 +1,282 @@
+/* General in body styling */
+body {
+    background-color: lightsteelblue;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+    margin: 0;
+    font-size: 48px;
+    padding-top: 150px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: teal;
+  width: 25%;
+  justify-content: center;
+  border: 2px solid;
+  border-color: white;
+  border-bottom: teal;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Topbar-nav start - Learnt from W3Schools.com - Navigation bar: https://www.w3schools.com/css/css_navbar.asp */
+.topbar-navigation {
+    position: fixed;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    display: inline-flex;
+    flex-wrap: row wrap;
+    justify-content : flex - end;
+    font-size: 24px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.topbar-navigation a{
+    text-decoration : none;
+    display: inline-flex;
+    color : white;
+    padding-bottom : 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    }
+
+.topbar-navigation a:hover{
+   background-color: tomato;
+   color: white;
+    }
+    
+@media all and (max-width: 100px) {
+        .topbar-navigation {
+            justify-content: space-around;
+        }
+    }
+    
+@media all and (max-width : 600px) {
+        .topbar-navigation {
+        flex-flow : column wrap ;
+        }
+    
+    
+.topbar-navigation li :last-of-type a {
+                border-bottom : none;
+            }
+    }
+/* Topbar-nav end */
+
+/* Logo portion of css for Homepage */
+.logo {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white; 
+  color: white; 
+  font-size: 24px; 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  text-align: center;
+  margin-bottom: -2px;
+}
+
+/* Dropdown Menu portion of css for Homepage - Learnt from W3Schools.com - Dropdown Menu: https://www.w3schools.com/css/css_dropdowns.asp*/
+.dropdown-button {
+    background-color: teal;
+    color: #000000;
+    font-size: 22.2px;
+    padding: 20px;
+    align-self: left;
+    cursor: default;
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+    border: 2px solid white;
+    border-left: 2px solid teal;
+}
+
+.dropdown {
+    position: fixed;
+    left: auto;
+    margin-top: 78px;
+  }
+  
+  .dropdown :hover{
+    background-color: tomato;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: turquoise;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  .dropdown-content a{
+      color: black;
+      padding: 20px;
+      text-decoration: none;
+      display: block;
+      align-content: center;
+      stroke-width: 10px;
+    }
+  
+  .dropdown-content a:hover{
+      background-color: tomato;
+      color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+    text-decoration-color: #f9f9f9;
+    background-color: turquoise;
+  }
+
+  .p-IntroText{
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 50px;
+    color: black;
+  }
+
+  /* Start of Scoreboard containers for different categories */
+  
+  /* 
+     [Parent(ID) = containers]
+     [Children(Class) = container-x & container-item-x]
+  */
+  .containers {
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: auto;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  #container-1 {
+    display: grid;
+    grid-template-columns : auto auto auto;
+    background-color: teal;
+    width: 75%;
+    margin: 0;
+    padding: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 150px;
+    border: 2px solid;
+    border-color: white;
+  }
+
+  #container-item-1 {
+    background-color : rgba(255, 255, 255, 0.8);
+    border : 1px solid rgba(0, 0, 0, 0.6);
+    margin : 10px 10px;
+    padding: 10px 10px;
+  }
+
+  #container-item-1:hover {
+    color: white;
+    background-color: tomato;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.6)
+  }
+
+  #container-2 {
+    display: grid;
+    grid-template-columns : auto auto auto;
+    background-color: teal;
+    width: 75%;
+    margin: 0;
+    padding: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 150px;
+    border: 2px solid;
+    border-color: white;
+  }
+
+  #container-item-2 {
+    background-color : rgba(255, 255, 255, 0.8);
+    border : 1px solid rgba(0, 0, 0, 0.6);
+    margin : 10px 10px;
+    padding: 10px 10px;
+  }
+
+  #container-item-2:hover {
+    color: white;
+    background-color: tomato;
+    box-shadow: 5px 5px 2.5px black
+  }
+
+  #container-3 {
+    display: grid;
+    grid-template-columns : auto auto auto;
+    background-color: teal;
+    width: 75%;
+    margin: 0;
+    padding: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 150px;
+    border: 2px solid;
+    border-color: white;
+  }
+
+  #container-item-3 {
+    background-color : rgba(255, 255, 255, 0.8);
+    border : 1px solid rgba(0, 0, 0, 0.6);
+    margin : 10px 10px;
+    padding: 10px 10px;
+  }
+
+  #container-item-3:hover {
+    color: white;
+    background-color: tomato;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.6)
+  }
+
+  /* End of Scoreboard containers*/
+
+
+  footer {
+      display: block;
+      position: absolute;
+      margin-left: 0px;
+      background-color: teal;
+      color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      text-align: bottom;
+      text-indent: 16px;
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-top: 2px solid white;
+  }

@@ -1,0 +1,196 @@
+/* General in body styling */
+body {
+    background-color: lightsteelblue;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+    margin: 0;
+    font-size: 48px;
+    padding-top: 150px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#Page-Text-Alignment-learn-history{
+  padding-left: 250px;
+  padding-right: 250px;
+  text-align: center;
+}
+
+/* Topbar-nav start - Learnt from W3Schools.com - Navigation bar: https://www.w3schools.com/css/css_navbar.asp */
+.topbar-navigation {
+    position: fixed;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    display: inline-flex;
+    flex-wrap: row wrap;
+    justify-content : flex - end;
+    font-size: 24px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.topbar-navigation a{
+    text-decoration : none;
+    display: inline-flex;
+    color : white;
+    padding-bottom : 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    }
+
+.topbar-navigation a:hover{
+   background-color: tomato;
+   color: white;
+    }
+    
+@media all and (max-width: 100px) {
+        .topbar-navigation {
+            justify-content: space-around;
+        }
+    }
+    
+@media all and (max-width : 600px) {
+        .topbar-navigation {
+        flex-flow : column wrap ;
+        }
+    
+    
+.topbar-navigation li :last-of-type a {
+                border-bottom : none;
+            }
+    }
+/* Topbar-nav end */
+
+/* Logo portion of css for Homepage */
+.logo {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white; 
+  color: white; 
+  font-size: 24px; 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  text-align: center;
+  margin-bottom: -2px;
+}
+
+/* Dropdown Menu portion of css for Homepage - Learnt from W3Schools.com - Dropdown Menu: https://www.w3schools.com/css/css_dropdowns.asp*/
+.dropdown-button {
+    background-color: teal;
+    color: #000000;
+    font-size: 22.2px;
+    padding: 20px;
+    align-self: left;
+    cursor: default;
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+    border: 2px solid white;
+    border-left: 2px solid teal;
+}
+
+.dropdown {
+    position: fixed;
+    left: auto;
+    margin-top: 78px;
+  }
+  
+  .dropdown :hover{
+    background-color: tomato;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: turquoise;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  .dropdown-content a{
+      color: black;
+      padding: 20px;
+      text-decoration: none;
+      display: block;
+      align-content: center;
+      stroke-width: 10px;
+    }
+  
+  .dropdown-content a:hover{
+      background-color: tomato;
+      color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+    text-decoration-color: #f9f9f9;
+    background-color: turquoise;
+  }
+
+  /*Container for links*/
+  .link-container{
+    width: fit-content;
+    height: fit-content;
+    background-color: teal;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    flex: auto;
+    border-radius: 50px;
+  }
+
+  .links{
+    display: grid;
+    width: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 24px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    flex-direction: column;
+  }
+
+  .links:hover{
+    color: tomato;
+    background-color: white;
+    box-sizing: content-box;
+  }
+
+  footer {
+      display: block;
+      position: absolute;
+      margin: 0;
+      background-color: teal;
+      color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      text-align: bottom;
+      text-indent: 16px;
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-top: 2px solid white;
+  }
